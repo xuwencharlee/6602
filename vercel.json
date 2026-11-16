@@ -1,0 +1,8 @@
+{
+  "functions": { "api/index.js": { "runtime": "nodejs22.x" } },
+  "rewrites": [
+    { "source": "/webhook", "destination": "/api/index" },
+    { "source": "/api/tasks", "destination": "/api/index" },
+    { "source": "/api/tasks/:id", "destination": "/api/index" }
+  ]
+}
